@@ -1,0 +1,359 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Apr  3 05:36:23 2021
+# Process ID: 26670
+# Current directory: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion
+# Command line: vivado
+# Log file: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion/vivado.log
+# Journal file: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project contador_Nfft /home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft -part xc7z010clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.1/data/ip'.
+set_property board_part digilentinc.com:arty-z7-10:part0:1.0 [current_project]
+set_property target_language VHDL [current_project]
+add_files -norecurse -scan_for_includes /home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes /home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft_tb.vhd
+update_compile_order -fileset sim_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+set_property top sim_1 [get_filesets sim_1]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj sim_1_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity contador_Nfft
+ERROR: [VRFC 10-1412] syntax error near ) [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:46]
+ERROR: [XSIM 43-3316] Signal SIGSEGV received.
+Printing stacktrace...
+
+[0] /opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libxsimverific.so(Verific::VhdlForScheme::VhdlForScheme(Verific::VhdlIdRef*, Verific::VhdlDiscreteRange*, unsigned int)+0xc7) [0x7ff544fbafb7]
+[1] /opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libxsimverific.so(vhdlparse()+0x8119) [0x7ff5450b0d69]
+[2] /opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libxsimverific.so(Verific::vhdl_file::Analyze(char const*, char const*, unsigned int)+0xb9) [0x7ff545086029]
+[3] /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xvhdl() [0x46d1a8]
+[4] /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xvhdl(main+0x3c8) [0x44bd68]
+[5] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7ff54326bbf7]
+[6] /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xvhdl() [0x465391]
+
+Done
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj sim_1_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity contador_Nfft
+ERROR: [VRFC 10-1412] syntax error near ) [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:46]
+ERROR: [XSIM 43-3316] Signal SIGSEGV received.
+Printing stacktrace...
+
+[0] /opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libxsimverific.so(Verific::VhdlForScheme::VhdlForScheme(Verific::VhdlIdRef*, Verific::VhdlDiscreteRange*, unsigned int)+0xc7) [0x7f13ba07bfb7]
+[1] /opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libxsimverific.so(vhdlparse()+0x8119) [0x7f13ba171d69]
+[2] /opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libxsimverific.so(Verific::vhdl_file::Analyze(char const*, char const*, unsigned int)+0xb9) [0x7f13ba147029]
+[3] /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xvhdl() [0x46d1a8]
+[4] /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xvhdl(main+0x3c8) [0x44bd68]
+[5] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7f13b832cbf7]
+[6] /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xvhdl() [0x465391]
+
+Done
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj sim_1_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity contador_Nfft
+ERROR: [VRFC 10-1412] syntax error near ) [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:46]
+ERROR: [XSIM 43-3316] Signal SIGSEGV received.
+Printing stacktrace...
+
+[0] /opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libxsimverific.so(Verific::VhdlForScheme::VhdlForScheme(Verific::VhdlIdRef*, Verific::VhdlDiscreteRange*, unsigned int)+0xc7) [0x7f08c7cd7fb7]
+[1] /opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libxsimverific.so(vhdlparse()+0x8119) [0x7f08c7dcdd69]
+[2] /opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libxsimverific.so(Verific::vhdl_file::Analyze(char const*, char const*, unsigned int)+0xb9) [0x7f08c7da3029]
+[3] /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xvhdl() [0x46d1a8]
+[4] /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xvhdl(main+0x3c8) [0x44bd68]
+[5] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7f08c5f88bf7]
+[6] /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xvhdl() [0x465391]
+
+Done
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj sim_1_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity contador_Nfft
+ERROR: [VRFC 10-1412] syntax error near ) [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:46]
+ERROR: [XSIM 43-3316] Signal SIGSEGV received.
+Printing stacktrace...
+
+[0] /opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libxsimverific.so(Verific::VhdlForScheme::VhdlForScheme(Verific::VhdlIdRef*, Verific::VhdlDiscreteRange*, unsigned int)+0xc7) [0x7ff7085f2fb7]
+[1] /opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libxsimverific.so(vhdlparse()+0x8119) [0x7ff7086e8d69]
+[2] /opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libxsimverific.so(Verific::vhdl_file::Analyze(char const*, char const*, unsigned int)+0xb9) [0x7ff7086be029]
+[3] /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xvhdl() [0x46d1a8]
+[4] /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xvhdl(main+0x3c8) [0x44bd68]
+[5] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7ff7068a3bf7]
+[6] /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xvhdl() [0x465391]
+
+Done
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj sim_1_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity contador_Nfft
+ERROR: [VRFC 10-1412] syntax error near ) [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:46]
+ERROR: [XSIM 43-3316] Signal SIGSEGV received.
+Printing stacktrace...
+
+[0] /opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libxsimverific.so(Verific::VhdlForScheme::VhdlForScheme(Verific::VhdlIdRef*, Verific::VhdlDiscreteRange*, unsigned int)+0xc7) [0x7ffb22d16fb7]
+[1] /opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libxsimverific.so(vhdlparse()+0x8119) [0x7ffb22e0cd69]
+[2] /opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libxsimverific.so(Verific::vhdl_file::Analyze(char const*, char const*, unsigned int)+0xb9) [0x7ffb22de2029]
+[3] /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xvhdl() [0x46d1a8]
+[4] /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xvhdl(main+0x3c8) [0x44bd68]
+[5] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7ffb20fc7bf7]
+[6] /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xvhdl() [0x465391]
+
+Done
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj sim_1_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity contador_Nfft
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity contador_Nfft_tb
+ERROR: [VRFC 10-1412] syntax error near ' [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft_tb.vhd:25]
+INFO: [VRFC 10-240] VHDL file /home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft_tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj sim_1_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity contador_Nfft
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity contador_Nfft_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 6bda9afea2ec4bfdb2acf36d451a0b19 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot sim_1_behav xil_defaultlib.sim_1 -log elaborate.log 
+Using 8 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.sim_1 in library work located at xsim.dir/work.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+add_files -norecurse -scan_for_includes /home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/fft.vhd
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj sim_1_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/fft.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fft
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 6bda9afea2ec4bfdb2acf36d451a0b19 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot sim_1_behav xil_defaultlib.sim_1 -log elaborate.log 
+Using 8 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.sim_1 in library work located at xsim.dir/work.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj sim_1_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity contador_Nfft_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 6bda9afea2ec4bfdb2acf36d451a0b19 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot sim_1_behav xil_defaultlib.sim_1 -log elaborate.log 
+Using 8 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.sim_1 in library work located at xsim.dir/work.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj sim_1_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity contador_Nfft_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 6bda9afea2ec4bfdb2acf36d451a0b19 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot sim_1_behav xil_defaultlib.sim_1 -log elaborate.log 
+Using 8 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.sim_1 in library work located at xsim.dir/work.
+INFO: [USF-XSim-69] 'elaborate' step finished in '0' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+config_webtalk -user on
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_ip_catalog
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:]
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj sim_1_vhdl.prj
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 6bda9afea2ec4bfdb2acf36d451a0b19 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot sim_1_behav xil_defaultlib.sim_1 -log elaborate.log 
+Using 8 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.sim_1 in library work located at xsim.dir/work.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj sim_1_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity contador_Nfft
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity contador_Nfft_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 6bda9afea2ec4bfdb2acf36d451a0b19 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot sim_1_behav xil_defaultlib.sim_1 -log elaborate.log 
+Using 8 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.sim_1 in library work located at xsim.dir/work.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  3 09:49:09 2021...

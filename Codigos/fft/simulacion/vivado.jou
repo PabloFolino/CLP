@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Apr  4 07:36:09 2021
+# Process ID: 24537
+# Current directory: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion
+# Command line: vivado
+# Log file: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion/vivado.log
+# Journal file: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project practica2 /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica2/practica2 -part xc7z010clg400-1
+set_property board_part digilentinc.com:arty-z7-10:part0:1.0 [current_project]
+set_property target_language VHDL [current_project]
+add_files -norecurse -scan_for_includes {/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica2/uart_baud_gen.vhd /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica2/uart_rx.vhd /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica2/uart_rx_ctl.vhd /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica2/uart_led.vhd /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica2/led_ctl.vhd /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica2/meta_harden.vhd /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica2/uart_top.vhd}
+import_files -force -norecurse
+import_files -fileset constrs_1 -force -norecurse /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica2/uart_led_timing_ArtyZ7.xdc
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+report_ssn -name ssn_1
+add_files -fileset constrs_1 -norecurse /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica2/uart_led_pins_ArtyZ7.xdc
+import_files -fileset constrs_1 /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica2/uart_led_pins_ArtyZ7.xdc
+refresh_design
+report_ssn -name ssn_1(1)
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_utilization -name utilization_1
+report_power -name {power_1}
+write_checkpoint /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica2/practica2/checkpoint_1.dcp -force
+create_run synth_flatten -flow {Vivado Synthesis 2018} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+current_run [get_runs synth_flatten]
+set_property STEPS.SYNTH_DESIGN.ARGS.FLATTEN_HIERARCHY full [get_runs synth_flatten]
+update_ip_catalog
+launch_runs synth_flatten -jobs 4
+wait_on_run synth_flatten
+close_design
+open_run synth_flatten -name synth_flatten
+report_utilization -name utilization_1
+write_checkpoint /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica2/practica2/checkpoint_2.dcp -force
+close_project
+open_checkpoint /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica2/practica2/checkpoint_1.dcp
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_project
+open_checkpoint /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica2/practica2/checkpoint_2.dcp
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1

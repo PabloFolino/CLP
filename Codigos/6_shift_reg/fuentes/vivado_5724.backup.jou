@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Apr  2 17:32:18 2021
+# Process ID: 5724
+# Current directory: /home/pablo/Documentos/Especialización/5_CLP/Codigos/shift_reg/fuentes
+# Command line: vivado
+# Log file: /home/pablo/Documentos/Especialización/5_CLP/Codigos/shift_reg/fuentes/vivado.log
+# Journal file: /home/pablo/Documentos/Especialización/5_CLP/Codigos/shift_reg/fuentes/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project shftreg /home/pablo/Documentos/Especializacin/5_CLP/Codigos/shift_reg/simulacion/shftreg -part xc7z010clg400-1
+set_property board_part digilentinc.com:arty-z7-10:part0:1.0 [current_project]
+set_property target_language VHDL [current_project]
+add_files -norecurse {/home/pablo/Documentos/Especialización/5_CLP/Codigos/shift_reg/fuentes/ffd.vhd /home/pablo/Documentos/Especialización/5_CLP/Codigos/shift_reg/fuentes/shift_reg.vhd}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/pablo/Documentos/Especialización/5_CLP/Codigos/shift_reg/fuentes/shift_reg_tb.vhd
+update_compile_order -fileset sim_1
+launch_simulation

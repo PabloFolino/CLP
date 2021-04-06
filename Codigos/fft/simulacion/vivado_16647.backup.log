@@ -1,0 +1,321 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Apr  4 05:45:58 2021
+# Process ID: 16647
+# Current directory: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion
+# Command line: vivado
+# Log file: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion/vivado.log
+# Journal file: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project Practia1 /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1 -part xc7z010clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.1/data/ip'.
+set_property board_part digilentinc.com:arty-z7-10:part0:1.0 [current_project]
+set_property target_language VHDL [current_project]
+add_files -norecurse -scan_for_includes /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/lab1.vhd
+import_files -norecurse /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/lab1.vhd
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/lab1_ArtyZ7_10.xdc
+import_files -fileset constrs_1 /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/lab1_ArtyZ7_10.xdc
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: lab1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 6217.430 ; gain = 58.004 ; free physical = 119 ; free virtual = 4912
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'lab1' [/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/sources_1/imports/practica1/lab1.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'lab1' (1#1) [/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/sources_1/imports/practica1/lab1.vhd:19]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 6261.039 ; gain = 101.613 ; free physical = 185 ; free virtual = 4917
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 6261.039 ; gain = 101.613 ; free physical = 174 ; free virtual = 4908
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 6261.039 ; gain = 101.613 ; free physical = 174 ; free virtual = 4908
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/constrs_1/imports/practica1/lab1_ArtyZ7_10.xdc]
+Finished Parsing XDC File [/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/constrs_1/imports/practica1/lab1_ArtyZ7_10.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 6633.117 ; gain = 473.691 ; free physical = 169 ; free virtual = 4553
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 6633.117 ; gain = 473.691 ; free physical = 169 ; free virtual = 4553
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/lab1_tb.vhd
+import_files -fileset sim_1 -norecurse /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/lab1_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property -name {xsim.simulate.runtime} -value {200ns} -objects [get_filesets sim_1]
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_ip_catalog
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj lab1_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/sources_1/imports/practica1/lab1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/sim_1/imports/practica1/lab1_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 29d3f32333494538ac397d21f63415f7 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot lab1_tb_behav xil_defaultlib.lab1_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture lab1_arq of entity xil_defaultlib.lab1 [lab1_default]
+Compiling architecture lab1_tb_arq of entity xil_defaultlib.lab1_tb
+Built simulation snapshot lab1_tb_behav
+
+****** Webtalk v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.sim/sim_1/behav/xsim/xsim.dir/lab1_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Apr  4 06:07:35 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab1_tb_behav -key {Behavioral:sim_1:Functional:lab1_tb} -tclbatch {lab1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source lab1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 200ns
+Note: La salida LED es correcta en 70000 ps
+Time: 70 ns  Iteration: 0  Process: /lab1_tb/line__51  File: /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/sim_1/imports/practica1/lab1_tb.vhd
+Note: La salida LED es correcta en 140000 ps
+Time: 140 ns  Iteration: 0  Process: /lab1_tb/line__51  File: /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/sim_1/imports/practica1/lab1_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 200ns
+launch_simulation: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 6721.930 ; gain = 75.297 ; free physical = 118 ; free virtual = 4497
+run 500 ns
+Note: La salida LED es correcta en 210000 ps
+Time: 210 ns  Iteration: 0  Process: /lab1_tb/line__51  File: /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/sim_1/imports/practica1/lab1_tb.vhd
+Note: La salida LED es correcta en 280000 ps
+Time: 280 ns  Iteration: 0  Process: /lab1_tb/line__51  File: /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/sim_1/imports/practica1/lab1_tb.vhd
+Note: La salida LED es correcta en 350000 ps
+Time: 350 ns  Iteration: 0  Process: /lab1_tb/line__51  File: /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/sim_1/imports/practica1/lab1_tb.vhd
+Note: La salida LED es correcta en 420000 ps
+Time: 420 ns  Iteration: 0  Process: /lab1_tb/line__51  File: /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/sim_1/imports/practica1/lab1_tb.vhd
+Note: La salida LED es correcta en 490000 ps
+Time: 490 ns  Iteration: 0  Process: /lab1_tb/line__51  File: /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/sim_1/imports/practica1/lab1_tb.vhd
+Note: La salida LED es correcta en 560000 ps
+Time: 560 ns  Iteration: 0  Process: /lab1_tb/line__51  File: /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/sim_1/imports/practica1/lab1_tb.vhd
+Note: La salida LED es correcta en 630000 ps
+Time: 630 ns  Iteration: 0  Process: /lab1_tb/line__51  File: /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/sim_1/imports/practica1/lab1_tb.vhd
+Note: La salida LED es correcta en 700000 ps
+Time: 700 ns  Iteration: 0  Process: /lab1_tb/line__51  File: /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/sim_1/imports/practica1/lab1_tb.vhd
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_runs synth_1 -jobs 4
+[Sun Apr  4 06:27:24 2021] Launched synth_1...
+Run output will be captured here: /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/constrs_1/imports/practica1/lab1_ArtyZ7_10.xdc]
+Finished Parsing XDC File [/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/constrs_1/imports/practica1/lab1_ArtyZ7_10.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+launch_runs impl_1 -jobs 4
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 7038.410 ; gain = 0.000 ; free physical = 144 ; free virtual = 4193
+[Sun Apr  4 06:35:00 2021] Launched impl_1...
+Run output will be captured here: /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.runs/impl_1/runme.log
+close_design
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7077.383 ; gain = 0.000 ; free physical = 812 ; free virtual = 4203
+Restored from archive | CPU: 0.020000 secs | Memory: 0.026215 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7077.383 ; gain = 0.000 ; free physical = 812 ; free virtual = 4203
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_design
+launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in '/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7200.934 ; gain = 0.000 ; free physical = 607 ; free virtual = 4196
+Restored from archive | CPU: 0.020000 secs | Memory: 0.026215 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7200.934 ; gain = 0.000 ; free physical = 607 ; free virtual = 4196
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.sim/sim_1/impl/timing/xsim/lab1_tb_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.sim/sim_1/impl/timing/xsim/lab1_tb_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.sim/sim_1/impl/timing/xsim/lab1_tb_time_impl.v
+INFO: [SIM-utils-37] SDF generated:/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.sim/sim_1/impl/timing/xsim/lab1_tb_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'lab1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.sim/sim_1/impl/timing/xsim'
+xvlog --incr --relax -prj lab1_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.sim/sim_1/impl/timing/xsim/lab1_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab1
+INFO: [VRFC 10-311] analyzing module glbl
+xvhdl --incr --relax -prj lab1_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/sim_1/imports/practica1/lab1_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.sim/sim_1/impl/timing/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 29d3f32333494538ac397d21f63415f7 --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot lab1_tb_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.lab1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "lab1_tb_time_impl.sdf", for root module "lab1_tb/DUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "lab1_tb_time_impl.sdf", for root module "lab1_tb/DUT".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.IBUF
+Compiling module xil_defaultlib.lab1
+Compiling architecture lab1_tb_arq of entity xil_defaultlib.lab1_tb
+Built simulation snapshot lab1_tb_time_impl
+
+****** Webtalk v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.sim/sim_1/impl/timing/xsim/xsim.dir/lab1_tb_time_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Apr  4 06:44:25 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab1_tb_time_impl -key {Post-Implementation:sim_1:Timing:lab1_tb} -tclbatch {lab1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source lab1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 200ns
+Note: La salida LED es correcta en 70000 ps
+Time: 70 ns  Iteration: 0  Process: /lab1_tb/line__51  File: /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/sim_1/imports/practica1/lab1_tb.vhd
+Note: La salida LED es correcta en 140000 ps
+Time: 140 ns  Iteration: 0  Process: /lab1_tb/line__51  File: /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/Practia1.srcs/sim_1/imports/practica1/lab1_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab1_tb_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 200ns
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 7227.879 ; gain = 26.945 ; free physical = 425 ; free virtual = 4153
+save_wave_config {/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/lab1_tb_time_impl.wcfg}
+add_files -fileset sim_1 -norecurse /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/lab1_tb_time_impl.wcfg
+set_property xsim.view /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/lab1_tb_time_impl.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 7227.879 ; gain = 0.000 ; free physical = 1069 ; free virtual = 3631
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr  4 07:36:04 2021...

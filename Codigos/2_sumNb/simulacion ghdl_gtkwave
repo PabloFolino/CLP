@@ -1,0 +1,19 @@
+
+Editados el archivo con la descripción de nuestra compuerta y el archivo de estímulos, se invoca a ghdl para su análisis:
+
+ghdl -a sum1b.vhd sum4b.vhd sum4b_tb.vhd
+
+Generamos el ejecutable al enlazar los módulos (objetos) creados:
+
+ghdl -e sum4b_tb
+
+Se ejecuta el archivo pasando como parámetros el tiempo máximos de simulación (100 nano segundos) y el archivo en donde se guardarán los resultados (tb_compnot.vcd):
+
+ghdl -r sum4b_tb –-stop-time=1000ns  --vcd=../simulacion/sum4b_tb.vcd
+
+ghdl -r sum4b_tb --stop-time=1us --vcd=../simulacion/sum4b_tb.vcd
+
+
+Finalmente visualizamos los resultados por medio de gtkwave
+
+gtkwave ../simulacion/sum4b_tb.vcd

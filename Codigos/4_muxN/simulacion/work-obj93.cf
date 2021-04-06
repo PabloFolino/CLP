@@ -1,0 +1,7 @@
+v 4
+file . "../fuentes/muxN.vhd" "f01e39e34d6befeef0171b710c924161296e244c" "20210404191259.510":
+  entity muxn at 1( 0) + 0 on 23;
+  architecture muxn_arq of muxn at 16( 269) + 0 on 24;
+file . "../fuentes/muxN_tb.vhd" "7207dd329977a3fdca9ae6f27a4092d1721055e1" "20210404191259.511":
+  entity muxn_tb at 1( 0) + 0 on 25;
+  architecture muxn_tb_arq of muxn_tb at 11( 146) + 0 on 26;

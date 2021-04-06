@@ -1,0 +1,201 @@
+$date
+  Mon Apr  5 03:22:02 2021
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module sum_rest4b_tb $end
+$var reg 4 ! a_tb[3:0] $end
+$var reg 4 " b_tb[3:0] $end
+$var reg 1 # sr_tb $end
+$var reg 4 $ s_tb[3:0] $end
+$var reg 1 % co_tb $end
+$scope module dut $end
+$var reg 4 & a_i[3:0] $end
+$var reg 4 ' b_i[3:0] $end
+$var reg 4 ( s_o[3:0] $end
+$var reg 1 ) c_o $end
+$var reg 1 * sr_i $end
+$var reg 5 + aux[4:0] $end
+$scope module sum_rest1b_ins_0 $end
+$var reg 1 , a_i $end
+$var reg 1 - b_i $end
+$var reg 1 . c_i $end
+$var reg 1 / sr_i $end
+$var reg 1 0 s_o $end
+$var reg 1 1 c_o $end
+$upscope $end
+$scope module sum_rest1b_ins_1 $end
+$var reg 1 2 a_i $end
+$var reg 1 3 b_i $end
+$var reg 1 4 c_i $end
+$var reg 1 5 sr_i $end
+$var reg 1 6 s_o $end
+$var reg 1 7 c_o $end
+$upscope $end
+$scope module sum_rest1b_ins_2 $end
+$var reg 1 8 a_i $end
+$var reg 1 9 b_i $end
+$var reg 1 : c_i $end
+$var reg 1 ; sr_i $end
+$var reg 1 < s_o $end
+$var reg 1 = c_o $end
+$upscope $end
+$scope module sum_rest1b_ins_3 $end
+$var reg 1 > a_i $end
+$var reg 1 ? b_i $end
+$var reg 1 @ c_i $end
+$var reg 1 A sr_i $end
+$var reg 1 B s_o $end
+$var reg 1 C c_o $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b0001 !
+b0100 "
+0#
+b0101 $
+0%
+b0001 &
+b0100 '
+b0101 (
+0)
+0*
+b00000 +
+1,
+0-
+0.
+0/
+10
+01
+02
+03
+04
+05
+06
+07
+08
+19
+0:
+0;
+1<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+#180000000
+1#
+b0011 $
+1%
+b0011 (
+1)
+1*
+b11001 +
+1.
+1/
+15
+16
+1;
+0<
+1=
+1@
+1A
+0B
+1C
+#250000000
+0#
+b0101 $
+0%
+b0101 (
+0)
+0*
+b00000 +
+0.
+0/
+05
+06
+0;
+1<
+0=
+0@
+0A
+0B
+0C
+#400000000
+b0010 !
+b1111 "
+1#
+b1101 $
+1%
+b0010 &
+b1111 '
+b1101 (
+1)
+1*
+b11111 +
+0,
+1-
+1.
+1/
+11
+12
+13
+14
+15
+06
+17
+1:
+1;
+1<
+1=
+1?
+1@
+1A
+1B
+1C
+#600000000
+0#
+b0001 $
+b0001 (
+0*
+b11100 +
+0.
+0/
+01
+04
+05
+06
+0;
+0<
+0A
+0B
+#800000000
+1#
+b1101 $
+b1101 (
+1*
+b11111 +
+1.
+1/
+11
+14
+15
+06
+17
+1:
+1;
+1<
+1A
+1B

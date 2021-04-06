@@ -1,0 +1,10 @@
+v 4
+file . "sum4b_tb.vhd" "ecc229318a1e504632d8563c8eba6672614943c6" "20210404120247.365":
+  entity sum4b_tb at 1( 0) + 0 on 45;
+  architecture sum4b_tb_arq of sum4b_tb at 7( 69) + 0 on 46;
+file . "sum4b.vhd" "4975443522677e122cc715316e0723355bb5c078" "20210404120247.364":
+  entity sum4b at 1( 0) + 0 on 43;
+  architecture sum4b_arq of sum4b at 14( 242) + 0 on 44;
+file . "sum1b.vhd" "b7dd3ea12b10f9f8eecab6f019c64358dd2fdbcc" "20210404120247.363":
+  entity sum1b at 1( 0) + 0 on 41;
+  architecture sum1b_arq of sum1b at 14( 198) + 0 on 42;

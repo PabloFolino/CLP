@@ -1,0 +1,362 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Apr  2 21:46:32 2021
+# Process ID: 13099
+# Current directory: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion
+# Command line: vivado
+# Log file: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion/vivado.log
+# Journal file: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project fft /home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft -part xc7z010clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.1/data/ip'.
+set_property board_part digilentinc.com:arty-z7-10:part0:1.0 [current_project]
+set_property target_language VHDL [current_project]
+add_files -norecurse -scan_for_includes /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/fuentes/fft.vhd
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/fuentes/fft_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fft_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj fft_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/fuentes/fft.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fft
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/fuentes/fft_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fft_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 37ed1fe1c02545538d1a5364acb8e6a6 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot fft_tb_behav xil_defaultlib.fft_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture fft_arq of entity xil_defaultlib.fft [fft_default]
+Compiling architecture fft_tb_arq of entity xil_defaultlib.fft_tb
+Built simulation snapshot fft_tb_behav
+
+****** Webtalk v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim/xsim.dir/fft_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Apr  2 21:48:52 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fft_tb_behav -key {Behavioral:sim_1:Functional:fft_tb} -tclbatch {fft_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source fft_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fft_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 6247.512 ; gain = 86.617 ; free physical = 168 ; free virtual = 5700
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fft_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj fft_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/fuentes/fft.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fft
+ERROR: [VRFC 10-460] cannot read from 'out' object q ; use 'buffer' or 'inout' [/home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/fuentes/fft.vhd:31]
+ERROR: [VRFC 10-1504] unit fft_arq ignored due to previous errors [/home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/fuentes/fft.vhd:14]
+INFO: [VRFC 10-240] VHDL file /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/fuentes/fft.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fft_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj fft_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/fuentes/fft.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fft
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 37ed1fe1c02545538d1a5364acb8e6a6 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot fft_tb_behav xil_defaultlib.fft_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture fft_arq of entity xil_defaultlib.fft [fft_default]
+Compiling architecture fft_tb_arq of entity xil_defaultlib.fft_tb
+Built simulation snapshot fft_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fft_tb_behav -key {Behavioral:sim_1:Functional:fft_tb} -tclbatch {fft_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source fft_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fft_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fft_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj fft_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/fuentes/fft_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fft_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 37ed1fe1c02545538d1a5364acb8e6a6 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot fft_tb_behav xil_defaultlib.fft_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture fft_arq of entity xil_defaultlib.fft [fft_default]
+Compiling architecture fft_tb_arq of entity xil_defaultlib.fft_tb
+Built simulation snapshot fft_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fft_tb_behav -key {Behavioral:sim_1:Functional:fft_tb} -tclbatch {fft_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source fft_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fft_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 6338.742 ; gain = 0.000 ; free physical = 133 ; free virtual = 5657
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fft_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj fft_tb_vhdl.prj
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 37ed1fe1c02545538d1a5364acb8e6a6 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot fft_tb_behav xil_defaultlib.fft_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fft_tb_behav -key {Behavioral:sim_1:Functional:fft_tb} -tclbatch {fft_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source fft_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fft_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fft_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj fft_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/fuentes/fft_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fft_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 37ed1fe1c02545538d1a5364acb8e6a6 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot fft_tb_behav xil_defaultlib.fft_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture fft_arq of entity xil_defaultlib.fft [fft_default]
+Compiling architecture fft_tb_arq of entity xil_defaultlib.fft_tb
+Built simulation snapshot fft_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fft_tb_behav -key {Behavioral:sim_1:Functional:fft_tb} -tclbatch {fft_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source fft_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fft_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fft_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj fft_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/fuentes/fft_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fft_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 37ed1fe1c02545538d1a5364acb8e6a6 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot fft_tb_behav xil_defaultlib.fft_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture fft_arq of entity xil_defaultlib.fft [fft_default]
+Compiling architecture fft_tb_arq of entity xil_defaultlib.fft_tb
+Built simulation snapshot fft_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/fft/simulacion/fft/fft.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fft_tb_behav -key {Behavioral:sim_1:Functional:fft_tb} -tclbatch {fft_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source fft_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fft_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  3 04:07:52 2021...

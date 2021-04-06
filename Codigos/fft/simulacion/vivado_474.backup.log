@@ -1,0 +1,514 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Apr  3 09:49:17 2021
+# Process ID: 474
+# Current directory: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion
+# Command line: vivado
+# Log file: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion/vivado.log
+# Journal file: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project contador_Nfft /home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft -part xc7z010clg400-1
+ERROR: [Common 17-53] User Exception: Project already exists on disk, please use '-force' option to overwrite: 
+     /home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.cache
+create_project contador_Nfft /home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft -part xc7z010clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.1/data/ip'.
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 6092.492 ; gain = 26.016 ; free physical = 1876 ; free virtual = 7133
+set_property board_part digilentinc.com:arty-z7-10:part0:1.0 [current_project]
+set_property target_language VHDL [current_project]
+add_files -norecurse -scan_for_includes /home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes /home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'contador_Nfft_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj contador_Nfft_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity contador_Nfft
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity contador_Nfft_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto fe68444384894bcca0ba5b68bfdf176c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot contador_Nfft_tb_behav xil_defaultlib.contador_Nfft_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] fft remains a black-box since it has no binding entity [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:35]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture contador_nfft_arq of entity xil_defaultlib.contador_Nfft [contador_nfft_default]
+Compiling architecture contador_nfft_tb_arq of entity xil_defaultlib.contador_nfft_tb
+Built simulation snapshot contador_Nfft_tb_behav
+
+****** Webtalk v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/xsim.dir/contador_Nfft_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Apr  3 09:54:28 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "contador_Nfft_tb_behav -key {Behavioral:sim_1:Functional:contador_Nfft_tb} -tclbatch {contador_Nfft_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source contador_Nfft_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'contador_Nfft_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 6240.141 ; gain = 76.609 ; free physical = 1858 ; free virtual = 7114
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'contador_Nfft_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj contador_Nfft_tb_vhdl.prj
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto fe68444384894bcca0ba5b68bfdf176c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot contador_Nfft_tb_behav xil_defaultlib.contador_Nfft_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] fft remains a black-box since it has no binding entity [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:35]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "contador_Nfft_tb_behav -key {Behavioral:sim_1:Functional:contador_Nfft_tb} -tclbatch {contador_Nfft_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source contador_Nfft_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'contador_Nfft_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6257.824 ; gain = 13.008 ; free physical = 1813 ; free virtual = 7077
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'contador_Nfft_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj contador_Nfft_tb_vhdl.prj
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto fe68444384894bcca0ba5b68bfdf176c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot contador_Nfft_tb_behav xil_defaultlib.contador_Nfft_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] fft remains a black-box since it has no binding entity [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:35]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "contador_Nfft_tb_behav -key {Behavioral:sim_1:Functional:contador_Nfft_tb} -tclbatch {contador_Nfft_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source contador_Nfft_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'contador_Nfft_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 6274.836 ; gain = 5.004 ; free physical = 1439 ; free virtual = 6800
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'contador_Nfft_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj contador_Nfft_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity contador_Nfft_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto fe68444384894bcca0ba5b68bfdf176c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot contador_Nfft_tb_behav xil_defaultlib.contador_Nfft_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] fft remains a black-box since it has no binding entity [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:35]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture contador_nfft_arq of entity xil_defaultlib.contador_Nfft [contador_nfft_default]
+Compiling architecture contador_nfft_tb_arq of entity xil_defaultlib.contador_nfft_tb
+Built simulation snapshot contador_Nfft_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "contador_Nfft_tb_behav -key {Behavioral:sim_1:Functional:contador_Nfft_tb} -tclbatch {contador_Nfft_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source contador_Nfft_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'contador_Nfft_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 6274.836 ; gain = 0.000 ; free physical = 1470 ; free virtual = 6844
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'contador_Nfft_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj contador_Nfft_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity contador_Nfft_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto fe68444384894bcca0ba5b68bfdf176c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot contador_Nfft_tb_behav xil_defaultlib.contador_Nfft_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] fft remains a black-box since it has no binding entity [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:35]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture contador_nfft_arq of entity xil_defaultlib.contador_Nfft [contador_nfft_default]
+Compiling architecture contador_nfft_tb_arq of entity xil_defaultlib.contador_nfft_tb
+Built simulation snapshot contador_Nfft_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "contador_Nfft_tb_behav -key {Behavioral:sim_1:Functional:contador_Nfft_tb} -tclbatch {contador_Nfft_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source contador_Nfft_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'contador_Nfft_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 6274.836 ; gain = 0.000 ; free physical = 1454 ; free virtual = 6823
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'contador_Nfft_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj contador_Nfft_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity contador_Nfft
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto fe68444384894bcca0ba5b68bfdf176c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot contador_Nfft_tb_behav xil_defaultlib.contador_Nfft_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] fft remains a black-box since it has no binding entity [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:35]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture contador_nfft_arq of entity xil_defaultlib.contador_Nfft [contador_nfft_default]
+Compiling architecture contador_nfft_tb_arq of entity xil_defaultlib.contador_nfft_tb
+Built simulation snapshot contador_Nfft_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "contador_Nfft_tb_behav -key {Behavioral:sim_1:Functional:contador_Nfft_tb} -tclbatch {contador_Nfft_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source contador_Nfft_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'contador_Nfft_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 6296.840 ; gain = 16.000 ; free physical = 1454 ; free virtual = 6830
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'contador_Nfft_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj contador_Nfft_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity contador_Nfft
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto fe68444384894bcca0ba5b68bfdf176c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot contador_Nfft_tb_behav xil_defaultlib.contador_Nfft_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] fft remains a black-box since it has no binding entity [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:35]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture contador_nfft_arq of entity xil_defaultlib.contador_Nfft [contador_nfft_default]
+Compiling architecture contador_nfft_tb_arq of entity xil_defaultlib.contador_nfft_tb
+Built simulation snapshot contador_Nfft_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "contador_Nfft_tb_behav -key {Behavioral:sim_1:Functional:contador_Nfft_tb} -tclbatch {contador_Nfft_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source contador_Nfft_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'contador_Nfft_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 6304.844 ; gain = 7.996 ; free physical = 1449 ; free virtual = 6816
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'contador_Nfft_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj contador_Nfft_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity contador_Nfft
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto fe68444384894bcca0ba5b68bfdf176c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot contador_Nfft_tb_behav xil_defaultlib.contador_Nfft_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] fft remains a black-box since it has no binding entity [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:35]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture contador_nfft_arq of entity xil_defaultlib.contador_Nfft [contador_nfft_default]
+Compiling architecture contador_nfft_tb_arq of entity xil_defaultlib.contador_nfft_tb
+Built simulation snapshot contador_Nfft_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "contador_Nfft_tb_behav -key {Behavioral:sim_1:Functional:contador_Nfft_tb} -tclbatch {contador_Nfft_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source contador_Nfft_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'contador_Nfft_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 6320.852 ; gain = 8.000 ; free physical = 1434 ; free virtual = 6808
+add_files -norecurse -scan_for_includes /home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/fft.vhd
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'contador_Nfft_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj contador_Nfft_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/fft.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fft
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto fe68444384894bcca0ba5b68bfdf176c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot contador_Nfft_tb_behav xil_defaultlib.contador_Nfft_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-380] binding entity fft does not have generic n [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:20]
+ERROR: [VRFC 10-718] formal port <clk_i> does not exist in entity <fft>.  Please compare the definition of block <fft> to its component declaration and its instantion to detect the mismatch. [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:23]
+ERROR: [VRFC 10-718] formal port <rst_i> does not exist in entity <fft>.  Please compare the definition of block <fft> to its component declaration and its instantion to detect the mismatch. [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:24]
+ERROR: [VRFC 10-718] formal port <ena_i> does not exist in entity <fft>.  Please compare the definition of block <fft> to its component declaration and its instantion to detect the mismatch. [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:25]
+ERROR: [VRFC 10-718] formal port <T_i> does not exist in entity <fft>.  Please compare the definition of block <fft> to its component declaration and its instantion to detect the mismatch. [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:26]
+ERROR: [VRFC 10-718] formal port <Q_o> does not exist in entity <fft>.  Please compare the definition of block <fft> to its component declaration and its instantion to detect the mismatch. [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:27]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit contador_nfft_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'contador_Nfft_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj contador_Nfft_tb_vhdl.prj
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto fe68444384894bcca0ba5b68bfdf176c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot contador_Nfft_tb_behav xil_defaultlib.contador_Nfft_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-380] binding entity fft does not have generic n [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:20]
+ERROR: [VRFC 10-718] formal port <clk_i> does not exist in entity <fft>.  Please compare the definition of block <fft> to its component declaration and its instantion to detect the mismatch. [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:23]
+ERROR: [VRFC 10-718] formal port <rst_i> does not exist in entity <fft>.  Please compare the definition of block <fft> to its component declaration and its instantion to detect the mismatch. [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:24]
+ERROR: [VRFC 10-718] formal port <ena_i> does not exist in entity <fft>.  Please compare the definition of block <fft> to its component declaration and its instantion to detect the mismatch. [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:25]
+ERROR: [VRFC 10-718] formal port <T_i> does not exist in entity <fft>.  Please compare the definition of block <fft> to its component declaration and its instantion to detect the mismatch. [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:26]
+ERROR: [VRFC 10-718] formal port <Q_o> does not exist in entity <fft>.  Please compare the definition of block <fft> to its component declaration and its instantion to detect the mismatch. [/home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd:27]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit contador_nfft_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft/contador_Nfft.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  3 10:31:59 2021...

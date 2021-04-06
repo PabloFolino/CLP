@@ -1,0 +1,21 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/lib/x86_64-linux-gnu/libc.so.6(+0x3f040) [0x7f21fd932040]
+/opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libverific.so(Verific::VhdlForScheme::VhdlForScheme(Verific::VhdlIdRef*, Verific::VhdlDiscreteRange*, unsigned int)+0xc7) [0x7f21ff452417]
+/opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libverific.so(vhdlparse()+0x8d80) [0x7f21ff54ad80]
+/opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libverific.so(Verific::vhdl_file::Analyze(char const*, char const*, unsigned int)+0xb9) [0x7f21ff51f179]
+srcscanner() [0x4927c9]
+srcscanner() [0x499d20]
+srcscanner() [0x49a0c6]
+srcscanner() [0x44ef30]
+srcscanner() [0x473518]
+/opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libtcl8.5.so(TclInvokeStringCommand+0x76) [0x7f21ffaedf66]
+/opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libtcl8.5.so(+0x334af) [0x7f21ffaf24af]
+/opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libtcl8.5.so(+0x34b38) [0x7f21ffaf3b38]
+/opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libtcl8.5.so(Tcl_EvalEx+0x13) [0x7f21ffaf40a3]
+/opt/Xilinx/Vivado/2018.1/lib/lnx64.o/libtcl8.5.so(Tcl_Eval+0x15) [0x7f21ffaf40c5]
+srcscanner(main+0x293) [0x43a4b3]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7f21fd914bf7]
+srcscanner() [0x43d4a9]

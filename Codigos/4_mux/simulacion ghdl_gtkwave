@@ -1,0 +1,19 @@
+
+Editados el archivo con la descripción de nuestra compuerta y el archivo de estímulos, se invoca a ghdl para su análisis:
+
+ghdl -a mux.vhd mux_tb.vhd
+
+Generamos el ejecutable al enlazar los módulos (objetos) creados:
+
+ghdl -e mux_tb
+
+Se ejecuta el archivo pasando como parámetros el tiempo máximos de simulación (100 nano segundos) y el archivo en donde se guardarán los resultados (tb_compnot.vcd):
+
+ghdl -r mux_tb –-stop-time=1000ns  --vcd=../simulacion/mux_tb.vcd
+
+ghdl -r mux_tb --stop-time=1us --vcd=../simulacion/mux_tb.vcd
+
+
+Finalmente visualizamos los resultados por medio de gtkwave
+
+gtkwave ../simulacion/mux_tb.vcd

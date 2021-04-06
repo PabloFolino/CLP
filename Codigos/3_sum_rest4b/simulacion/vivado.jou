@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Apr  5 02:57:05 2021
+# Process ID: 31210
+# Current directory: /home/pablo/Documentos/Especialización/5_CLP/Codigos/3_sum_rest4b/simulacion
+# Command line: vivado
+# Log file: /home/pablo/Documentos/Especialización/5_CLP/Codigos/3_sum_rest4b/simulacion/vivado.log
+# Journal file: /home/pablo/Documentos/Especialización/5_CLP/Codigos/3_sum_rest4b/simulacion/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project ss /home/pablo/Documentos/Especializacin/5_CLP/Codigos/3_sum_rest4b/simulacion/ss -part xc7a12ticsg325-1L
+set_property target_language VHDL [current_project]
+add_files -norecurse -scan_for_includes {/home/pablo/Documentos/Especialización/5_CLP/Codigos/3_sum_rest4b/fuentes/sum_rest4b.vhd /home/pablo/Documentos/Especialización/5_CLP/Codigos/3_sum_rest4b/fuentes/sum_rest1b.vhd}
+import_files -force -norecurse
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes /home/pablo/Documentos/Especialización/5_CLP/Codigos/3_sum_rest4b/fuentes/sum_rest4b_tb.vhd
+import_files -fileset sim_1 -norecurse /home/pablo/Documentos/Especialización/5_CLP/Codigos/3_sum_rest4b/fuentes/sum_rest4b_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source sum_rest4b_tb.tcl
+close_sim

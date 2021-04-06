@@ -1,0 +1,7 @@
+v 4
+file . "../fuentes/fft_tb.vhd" "fc873b3664aeea15587edfbcf24505ddbcc6ee0c" "20210403004617.444":
+  entity fft_tb at 1( 0) + 0 on 13;
+  architecture fft_tb_arq of fft_tb at 7( 73) + 0 on 14;
+file . "../fuentes/fft.vhd" "304fe038425974660eb8b50f13ea7c6fd3d7dba9" "20210403004617.443":
+  entity fft at 1( 0) + 0 on 11;
+  architecture fft_arq of fft at 14( 197) + 0 on 12;

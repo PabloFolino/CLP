@@ -1,0 +1,7 @@
+v 4
+file . "../fuentes/sum_rest4b.vhd" "274ce8b1b208f2b4cbd52b5090a5660ac3c6d4ef" "20210404223759.855":
+  entity sum_rest4b at 1( 0) + 0 on 15;
+  architecture sum_rest4b_arq of sum_rest4b at 15( 267) + 0 on 16;
+file . "../fuentes/sum_rest1b.vhd" "582eac3b8dcfff0a24fc11d81c92fd21e7b9f3d8" "20210404223759.853":
+  entity sum_rest1b at 1( 0) + 0 on 13;
+  architecture sum_rest1b_arq of sum_rest1b at 15( 224) + 0 on 14;

@@ -1,0 +1,7 @@
+v 4
+file . "../fuentes/shift_reg.vhd" "8b338022dc077d21cb8a3083da6a7cc57efceeaf" "20210405114000.162":
+  entity shift_reg at 1( 0) + 0 on 23;
+  architecture shift_reg_arq of shift_reg at 17( 256) + 0 on 24;
+file . "../fuentes/shift_reg_tb.vhd" "c3522eebf942a9260fcc30fdfc46b3bfdafe712b" "20210405114000.162":
+  entity shift_reg_tb at 1( 0) + 0 on 25;
+  architecture shift_reg_tb_arq of shift_reg_tb at 7( 73) + 0 on 26;

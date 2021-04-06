@@ -1,0 +1,7 @@
+v 4
+file . "../fuentes/barrel_shifter_4b_tb.vhd" "540637c8231d3def54c1d1a9f3217c09912b7566" "20210405222246.764":
+  entity barrel_shifter_4b_tb at 1( 0) + 0 on 13;
+  architecture barrel_shifter_4b_tb_arq of barrel_shifter_4b_tb at 11( 136) + 0 on 14;
+file . "../fuentes/barrel_shifter_4b.vhd" "8483c8f79a34e15d3e27eb654c95bfafbe04e245" "20210405222246.763":
+  entity barrel_shifter_4b at 1( 0) + 0 on 11;
+  architecture barrel_shifter_4b_arq of barrel_shifter_4b at 17( 309) + 0 on 12;

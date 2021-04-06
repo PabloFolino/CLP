@@ -1,0 +1,13 @@
+v 4
+file . "muxN_tb.vhd" "49d84141fe4c2495689f6c94796b1ed97420de71" "20210404190350.494":
+  entity muxn_tb at 1( 0) + 0 on 25;
+  architecture muxn_tb_arq of muxn_tb at 11( 146) + 0 on 26;
+file . "muxN.vhd" "f01e39e34d6befeef0171b710c924161296e244c" "20210404190350.493":
+  entity muxn at 1( 0) + 0 on 23;
+  architecture muxn_arq of muxn at 16( 269) + 0 on 24;
+file . "../fuentes/muxN_tb.vhd" "8bd92b1fb4823691c01e98cf6913aaa3699e3718" "20210404185455.896":
+  entity mux_tb at 1( 0) + 0 on 21;
+  architecture mux_tb_arq of mux_tb at 11( 145) + 0 on 22;
+file . "../fuentes/muxN.vhd" "e9f1b1b8e92d4283908fdbe1e762aeb200b1c51d" "20210404185455.894":
+  entity mux at 1( 0) + 0 on 19;
+  architecture mux_arq of mux at 16( 268) + 0 on 20;

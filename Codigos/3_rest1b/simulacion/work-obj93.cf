@@ -1,0 +1,7 @@
+v 4
+file . "../fuentes/rest1b.vhd" "fd22beff6fdb3d0a6d8dec204a9195b47a3ec302" "20210405003346.872":
+  entity rest1b at 1( 0) + 0 on 15;
+  architecture rest1b_arq of rest1b at 14( 197) + 0 on 16;
+file . "../fuentes/rest1b_tb.vhd" "b8453da8ab6543ef4bd8b188939a2b4846facf08" "20210405003346.873":
+  entity rest1b_tb at 1( 0) + 0 on 17;
+  architecture sum1b_tb_arq of rest1b_tb at 7( 76) + 0 on 18;

@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Apr  4 05:45:58 2021
+# Process ID: 16647
+# Current directory: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion
+# Command line: vivado
+# Log file: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion/vivado.log
+# Journal file: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project Practia1 /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1 -part xc7z010clg400-1
+set_property board_part digilentinc.com:arty-z7-10:part0:1.0 [current_project]
+set_property target_language VHDL [current_project]
+add_files -norecurse -scan_for_includes /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/lab1.vhd
+import_files -norecurse /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/lab1.vhd
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/lab1_ArtyZ7_10.xdc
+import_files -fileset constrs_1 /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/lab1_ArtyZ7_10.xdc
+synth_design -rtl -name rtl_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/lab1_tb.vhd
+import_files -fileset sim_1 -norecurse /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/lab1_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property -name {xsim.simulate.runtime} -value {200ns} -objects [get_filesets sim_1]
+update_ip_catalog
+launch_simulation
+source lab1_tb.tcl
+run 500 ns
+close_sim
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+open_run impl_1
+close_design
+launch_simulation -mode post-implementation -type timing
+source lab1_tb.tcl
+save_wave_config {/home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/lab1_tb_time_impl.wcfg}
+add_files -fileset sim_1 -norecurse /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/lab1_tb_time_impl.wcfg
+set_property xsim.view /home/pablo/Documentos/Especializacion/5_CLP/Codigos/practica1/Practia1/lab1_tb_time_impl.wcfg [get_filesets sim_1]
+close_sim

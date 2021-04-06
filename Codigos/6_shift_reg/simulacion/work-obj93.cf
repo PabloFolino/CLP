@@ -1,0 +1,10 @@
+v 4
+file . "../fuentes/ffd.vhd" "52a5e78652942ca03242c255407a6e1c52726b0a" "20210405062640.851":
+  entity ffd at 1( 0) + 0 on 41;
+  architecture ffd_arq of ffd at 14( 199) + 0 on 42;
+file . "../fuentes/shift_reg.vhd" "746a11cb87b4f3e2a4132d64c01c8a0d47b1358e" "20210405062640.852":
+  entity shift_reg at 1( 0) + 0 on 43;
+  architecture shift_reg_arq of shift_reg at 17( 236) + 0 on 44;
+file . "../fuentes/shift_reg_tb.vhd" "9787736b4c15183d165ffdfc8a7d17d498d24c46" "20210405062640.853":
+  entity shift_reg_tb at 1( 0) + 0 on 45;
+  architecture shift_reg_tb_arq of shift_reg_tb at 7( 79) + 0 on 46;

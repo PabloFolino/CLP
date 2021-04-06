@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Apr  3 05:36:23 2021
+# Process ID: 26670
+# Current directory: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion
+# Command line: vivado
+# Log file: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion/vivado.log
+# Journal file: /home/pablo/Documentos/Especialización/5_CLP/Codigos/fft/simulacion/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project contador_Nfft /home/pablo/Documentos/Especializacin/5_CLP/Codigos/contador_Nfft/simulacion/contador_Nfft -part xc7z010clg400-1
+set_property board_part digilentinc.com:arty-z7-10:part0:1.0 [current_project]
+set_property target_language VHDL [current_project]
+add_files -norecurse -scan_for_includes /home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes /home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/contador_Nfft_tb.vhd
+update_compile_order -fileset sim_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+set_property top sim_1 [get_filesets sim_1]
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+add_files -norecurse -scan_for_includes /home/pablo/Documentos/Especialización/5_CLP/Codigos/contador_Nfft/fuentes/fft.vhd
+launch_simulation
+launch_simulation
+launch_simulation
+config_webtalk -user on
+update_ip_catalog
+launch_simulation
+launch_simulation

@@ -1,0 +1,10 @@
+v 4
+file . "../fuentes/sum1b.vhd" "b7dd3ea12b10f9f8eecab6f019c64358dd2fdbcc" "20210405075410.551":
+  entity sum1b at 1( 0) + 0 on 41;
+  architecture sum1b_arq of sum1b at 14( 198) + 0 on 42;
+file . "../fuentes/sumNb.vhd" "6b9d8dcbd59bc6d3c15bf357d8b5d67066a8f1e5" "20210405075410.552":
+  entity sumnb at 1( 0) + 0 on 43;
+  architecture sumnb_arq of sumnb at 17( 283) + 0 on 44;
+file . "../fuentes/sumNb_tb.vhd" "883e6d060841f2ba96b9da60e26d1d6830e25a6c" "20210405075410.557":
+  entity sumnb_tb at 1( 0) + 0 on 45;
+  architecture sumnb_tb_arq of sumnb_tb at 8( 95) + 0 on 46;
