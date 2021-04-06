@@ -1,0 +1,10 @@
+v 4
+file . "../fuentes/contador_bcd_tb.vhd" "ba4fe528e7b1e95b027fbeee40f265c6943ccbd4" "20210406120327.635":
+  entity contador_bcd_tb at 1( 0) + 0 on 159;
+  architecture contador_bcd_tb_arq of contador_bcd_tb at 10( 121) + 0 on 160;
+file . "../fuentes/contador_bcd.vhd" "0376205f28ec249f0a432e824e34bfa3dc1a4fba" "20210406120327.635":
+  entity contador_bcd at 1( 0) + 0 on 157;
+  architecture contador_bcd_arq of contador_bcd at 16( 254) + 0 on 158;
+file . "../fuentes/ffd.vhd" "1a9b86a544fa5d00ba047b0fe65b3ada68321186" "20210406120327.634":
+  entity ffd at 2( 42) + 0 on 155;
+  architecture ffd_arq of ffd at 14( 220) + 0 on 156;

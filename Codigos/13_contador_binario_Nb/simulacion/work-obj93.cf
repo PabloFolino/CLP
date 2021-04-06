@@ -1,0 +1,7 @@
+v 4
+file . "../fuentes/contador_bcd_tb.vhd" "d189a9fc91e64db0328bd6ae0c8d41fd40c965b3" "20210406140524.601":
+  entity contador_bcd_tb at 1( 0) + 0 on 45;
+  architecture contador_bcd_tb_arq of contador_bcd_tb at 10( 121) + 0 on 46;
+file . "../fuentes/contador_bcd.vhd" "b6b4e7890df11c14cd81ebf8ca916942dd0c5ad9" "20210406140524.601":
+  entity contador_bcd at 1( 0) + 0 on 43;
+  architecture contador_bcd_arq of contador_bcd at 17( 267) + 0 on 44;
