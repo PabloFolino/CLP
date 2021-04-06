@@ -1,0 +1,7 @@
+v 4
+file . "../fuentes/gen_hab_tb.vhd" "6ef670e6cfbc2cbf90f7485f3d88a4057150a5df" "20210406201451.705":
+  entity gen_hab_tb at 1( 0) + 0 on 13;
+  architecture contador_bcd_tb_arq of gen_hab_tb at 7( 77) + 0 on 14;
+file . "../fuentes/gen_hab.vhd" "7753362fe97ebabfffb4b5406b8f1b6140f23fb4" "20210406201451.705":
+  entity gen_hab at 1( 0) + 0 on 11;
+  architecture gen_hab_arq of gen_hab at 16( 218) + 0 on 12;
