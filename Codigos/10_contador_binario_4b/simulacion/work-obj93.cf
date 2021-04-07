@@ -1,10 +1,10 @@
 v 4
-file . "../fuentes/contador_bcd_tb.vhd" "ba4fe528e7b1e95b027fbeee40f265c6943ccbd4" "20210406120327.635":
-  entity contador_bcd_tb at 1( 0) + 0 on 159;
-  architecture contador_bcd_tb_arq of contador_bcd_tb at 10( 121) + 0 on 160;
-file . "../fuentes/contador_bcd.vhd" "0376205f28ec249f0a432e824e34bfa3dc1a4fba" "20210406120327.635":
-  entity contador_bcd at 1( 0) + 0 on 157;
-  architecture contador_bcd_arq of contador_bcd at 16( 254) + 0 on 158;
-file . "../fuentes/ffd.vhd" "1a9b86a544fa5d00ba047b0fe65b3ada68321186" "20210406120327.634":
-  entity ffd at 2( 42) + 0 on 155;
-  architecture ffd_arq of ffd at 14( 220) + 0 on 156;
+file . "../fuentes/ffd.vhd" "6c275c15a24af87d362056347afdcbd0382a17bc" "20210407011042.977":
+  entity ffd at 2( 42) + 0 on 89;
+  architecture ffd_arq of ffd at 15( 243) + 0 on 90;
+file . "../fuentes/contador_bcd.vhd" "43d01dc8c4b43a7071b2656e4812e5cb36e6f644" "20210407011042.978":
+  entity contador_bcd at 1( 0) + 0 on 91;
+  architecture contador_bcd_arq of contador_bcd at 16( 254) + 0 on 92;
+file . "../fuentes/contador_bcd_tb.vhd" "4fcdf22cbacf5a6027297b17e3199842891415b8" "20210407011042.979":
+  entity contador_bcd_tb at 1( 0) + 0 on 93;
+  architecture contador_bcd_tb_arq of contador_bcd_tb at 10( 121) + 0 on 94;

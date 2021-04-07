@@ -22,9 +22,9 @@ serie utilizando el flip-flop anterior. Simularlo. | ✔ |
 [1.0] | 8. Crear en VHDL un barrel shifter de N bits por comportamiento. Simularlo| ✔ |
 [1.0] | 9. Pensar cómo se podría implementar el barrel shifter anterior utilizando multiplexores de
 2x1 (ancho del componente fijo).| ✔ |
-[1.0] | 10. Crear en VHDL un contador binario de 4 bits de manera estructural. Simularlo. | x |
+[1.0] | 10. Crear en VHDL un contador binario de 4 bits de manera estructural. Simularlo. | ✔ |
 [1.0] | 11. IDEM anterior pero describiéndolo por comportamiento. Simular. | ✔ |
-[1.0] | 12. Crear en VHDL un contador binario genérico de N bits de manera estructural. Simularlo. | x |
+[1.0] | 12. Crear en VHDL un contador binario genérico de N bits de manera estructural. Simularlo. | ✔ |
 [1.0] | 13. IDEM anterior pero describiéndolo por comportamiento. Simular.| ✔ |
 [1.0] | 14.  Crear en VHDL un contador BCD de un dígito de manera estructural, utilizando un registro de 4 bits (con reset sincrónico), un incrementador y un comparador. Simularlo | ✔ |
 [1.0] | 15. Crear en VHDL un contador BCD de un dígito por comportamiento (describiendo cómo funciona, utilizando un process). Simularlo.  | ✔ |
