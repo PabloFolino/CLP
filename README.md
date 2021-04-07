@@ -7,7 +7,7 @@ Profesor: Nicolás Alvarez
 
 Año: 2021
 
-# Resumende la Guia de TPs
+# Resumen de la Guia de TPs
 
 | Versión | Descripción | Cumplido |
 | :-: | :-: | :-: |
